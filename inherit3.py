@@ -19,9 +19,10 @@ class D(C,F):
 	def __init__(self,a):
 		C.__init__(self,5)	
 		self.f=a
-class E(D):
+class E(D,A):
 	def __init__(self,a):
 		D.__init__(self,6)	
+		A.__init__(self,7,8)
 		self.g=a
 a=E(11)
 print(a.a)
